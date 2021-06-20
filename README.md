@@ -1,1 +1,1 @@
-# the-ultimate-guide
+# the-ultimate-guide-to-sql
