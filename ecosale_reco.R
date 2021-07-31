@@ -34,6 +34,7 @@ data = read_csv("C:/Users/User/Documents/Python_Scripts/datacamp/Introduction to
 
 # ETL and append rows
 # Write the table, is it doesn't exist it will be created
+
 sqlSave(connection, data, tablename = "titanc", rownames =  FALSE, append = TRUE)
 # append this data existing table in SQL server
 
@@ -43,3 +44,5 @@ odbcClose(connection)
 # Read data from sql
 titanicfromsql <-  sqlQuery(connection, "select * from dbo.titanc")
 basicDataTbl = sqlFetch(connection,"titanc")
+
+# https://edumine.wordpress.com/2015/04/16/connect-r-to-sql-server-2014/
